@@ -32,12 +32,11 @@ const data = {
     // 格式化时间为完整的时间字符串，精确到毫秒并包含时区
     let timeString = `${this.year}年${this.month < 10 ? '0' + this.month : this.month}月${this.day < 10 ? '0' + this.day : this.day}日 ` +
            `${this.weekday} ` +
-           `${this.hours < 10 ? '0' + this.hours : this.hours}:${this.minutes < 10 ? '0' + this.minutes : this.minutes}:${this.seconds < 10 ? '0' + this.seconds : this.seconds}.${this.milliseconds < 100 ? '0' + (this.milliseconds < 10 ? '0' + this.milliseconds : this.milliseconds) : this.milliseconds} ` +
-           `时区: ${this.timeZoneOffset}`;
+           `${this.hours < 10 ? '0' + this.hours : this.hours}:${this.minutes < 10 ? '0' + this.minutes : this.minutes}:${this.seconds < 10 ? '0' + this.seconds : this.seconds}`;
     if (this.minutes === 50) {
       timeString += "\n站起来活动一下吧！";
     }
-	  if (this.minutes === 20) {
+	 if (this.minutes === 20) {
       timeString += "\n站起来活动一下吧！";
     }
 
