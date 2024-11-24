@@ -34,10 +34,10 @@ const data = {
            `${this.weekday} ` +
            `${this.hours < 10 ? '0' + this.hours : this.hours}:${this.minutes < 10 ? '0' + this.minutes : this.minutes}:${this.seconds < 10 ? '0' + this.seconds : this.seconds}.${this.milliseconds < 100 ? '0' + (this.milliseconds < 10 ? '0' + this.milliseconds : this.milliseconds) : this.milliseconds} ` +
            `时区: ${this.timeZoneOffset}`;
-    if (this.seconds === 50) {
+    if (this.minutes === 50) {
       timeString += "\n站起来活动一下吧！";
     }
-	  if (this.seconds === 20) {
+	  if (this.minutes === 20) {
       timeString += "\n站起来活动一下吧！";
     }
 
